@@ -1,8 +1,8 @@
 """Local safety policy for support questions and generated answers."""
 
-from dataclasses import dataclass
 import re
 import unicodedata
+from dataclasses import dataclass
 from typing import Literal, Protocol
 
 from support_assistant.models import SupportAnswer

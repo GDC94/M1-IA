@@ -10,8 +10,8 @@ from support_assistant.llm import (
     LanguageModel,
     MalformedModelOutput,
 )
-from support_assistant.models import Metrics, SupportResponse
 from support_assistant.metrics_log import log_safety_decision
+from support_assistant.models import Metrics, SupportResponse
 from support_assistant.pricing import estimate_cost
 from support_assistant.prompts import build_messages
 from support_assistant.safety import BasicSafetyPolicy, SafetyPolicy
