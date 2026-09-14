@@ -27,7 +27,9 @@ Action = Literal[
 class SupportAnswer(BaseModel):
     """What the model generates. Used as the Structured Outputs schema."""
 
-    answer: str = Field(min_length=1, description="Concise reply for the support agent.")
+    answer: str = Field(
+        min_length=1, description="Concise reply for the support agent."
+    )
     confidence: float = Field(
         ge=0.0,
         le=1.0,
